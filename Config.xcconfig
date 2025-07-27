@@ -1,0 +1,12 @@
+// Configuration for the AUv3 component.
+//
+// These values are injected into the AUv3 appex Info.plist file and they are also used by
+// the host app when it queries for the AUv3 to load.
+//
+DEVELOPMENT_TEAM = UP6SS5ES7E
+APP_STORE_ID = 1554960150
+AU_BASE_NAME = __NAME__AU
+AU_COMPONENT_NAME = B-Ray: $(AU_BASE_NAME)
+AU_COMPONENT_TYPE = aufx
+AU_COMPONENT_SUBTYPE = dEm0
+AU_COMPONENT_MANUFACTURER = BRay
