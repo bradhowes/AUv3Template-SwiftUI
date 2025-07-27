@@ -90,10 +90,11 @@ be clear.
 
 # Dependencies
 
-This code now depends on two Swift packages:
+This code currently depends on three Swift packages:
 
-- [auv3=support](https://github.com/bradhowes/auv3-support) -- common AUv3 component and host code.
+- [auv3-support](https://github.com/bradhowes/auv3-support) -- common AUv3 component and host code.
 - [AUv3Controls](https://github.com/bradhowes/AUv3Controls) -- knob and switch controls in SwiftUI
+- [DSPHeaders](https://github.com/bradhowes/AUv3Controls) -- C++ v23 header files for DSP processing
 
 [ci]: https://github.com/bradhowes/AUv3Template2/actions/workflows/CI.yml
 [status]: https://github.com/bradhowes/AUv3Template2/actions/workflows/CI.yml/badge.svg?branch=main
