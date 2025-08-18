@@ -1,3 +1,4 @@
+[![CI][status]][ci]
 [![][swift6]](https://swift.org)
 [![AUv3][auv3]][au]
 [![License: MIT][mit]][license]
