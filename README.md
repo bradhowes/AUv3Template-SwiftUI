@@ -2,6 +2,7 @@
 [![][swift6]](https://swift.org)
 [![AUv3][auv3]][au]
 [![License: MIT][mit]][license]
+
 ![](media/256px.png)
 
 # About AUv3Template2
