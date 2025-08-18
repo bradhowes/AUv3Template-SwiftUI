@@ -26,21 +26,21 @@
 			containerPortal = BDF599712E284D630093A134 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BDF599782E284D630093A134;
-			remoteInfo = "__NAME__";
+			remoteInfo = __NAME__;
 		};
 		BDF599AA2E284D640093A134 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BDF599712E284D630093A134 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BDF599782E284D630093A134;
-			remoteInfo = "__NAME__";
+			remoteInfo = __NAME__;
 		};
 		BDF599B72E284D640093A134 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BDF599712E284D630093A134 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BDF599B42E284D640093A134;
-			remoteInfo = "__NAME__Extension";
+			remoteInfo = __NAME__Extension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,10 +59,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		BDF599792E284D630093A134 /* __NAME__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "__NAME__.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDF5999F2E284D640093A134 /* __NAME__Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "__NAME__Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDF599A92E284D640093A134 /* __NAME__UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "__NAME__UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BDF599B52E284D640093A134 /* __NAME__Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "__NAME__Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF599792E284D630093A134 /* __NAME__.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = __NAME__.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF5999F2E284D640093A134 /* __NAME__Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = __NAME__Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF599A92E284D640093A134 /* __NAME__UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = __NAME__UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDF599B52E284D640093A134 /* __NAME__Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = __NAME__Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDF599F12E284D8B0093A134 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,17 +89,17 @@
 			exceptions = (
 				BDF59A582E2856990093A134 /* Exceptions for "__NAME__" folder in "__NAME__" target */,
 			);
-			path = "__NAME__";
+			path = __NAME__;
 			sourceTree = "<group>";
 		};
 		BDF599A22E284D640093A134 /* __NAME__Tests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "__NAME__Tests";
+			path = __NAME__Tests;
 			sourceTree = "<group>";
 		};
 		BDF599AC2E284D640093A134 /* __NAME__UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "__NAME__UITests";
+			path = __NAME__UITests;
 			sourceTree = "<group>";
 		};
 		BDF599B92E284D640093A134 /* __NAME__Extension */ = {
@@ -107,7 +107,7 @@
 			exceptions = (
 				BDF599E02E284D640093A134 /* Exceptions for "__NAME__Extension" folder in "__NAME__Extension" target */,
 			);
-			path = "__NAME__Extension";
+			path = __NAME__Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -204,13 +204,13 @@
 			fileSystemSynchronizedGroups = (
 				BDF5997B2E284D630093A134 /* __NAME__ */,
 			);
-			name = "__NAME__";
+			name = __NAME__;
 			packageProductDependencies = (
 				BD33C9F62E36C76B003EE137 /* AUv3Component */,
 				BD33C9FA2E36C76B003EE137 /* AUv3Shared */,
 				BD33CB152E36D364003EE137 /* AUv3Host */,
 			);
-			productName = "__NAME__";
+			productName = __NAME__;
 			productReference = BDF599792E284D630093A134 /* __NAME__.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -230,10 +230,10 @@
 			fileSystemSynchronizedGroups = (
 				BDF599A22E284D640093A134 /* __NAME__Tests */,
 			);
-			name = "__NAME__Tests";
+			name = __NAME__Tests;
 			packageProductDependencies = (
 			);
-			productName = "__NAME__Tests";
+			productName = __NAME__Tests;
 			productReference = BDF5999F2E284D640093A134 /* __NAME__Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -253,10 +253,10 @@
 			fileSystemSynchronizedGroups = (
 				BDF599AC2E284D640093A134 /* __NAME__UITests */,
 			);
-			name = "__NAME__UITests";
+			name = __NAME__UITests;
 			packageProductDependencies = (
 			);
-			productName = "__NAME__UITests";
+			productName = __NAME__UITests;
 			productReference = BDF599A92E284D640093A134 /* __NAME__UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
@@ -275,7 +275,7 @@
 			fileSystemSynchronizedGroups = (
 				BDF599B92E284D640093A134 /* __NAME__Extension */,
 			);
-			name = "__NAME__Extension";
+			name = __NAME__Extension;
 			packageProductDependencies = (
 				BDF59A152E2852430093A134 /* AUv3Controls */,
 				BDF59A182E2852720093A134 /* AUv3Controls */,
@@ -284,7 +284,7 @@
 				BD33C9FC2E36C777003EE137 /* AUv3Component */,
 				BD33C9FE2E36C777003EE137 /* AUv3Shared */,
 			);
-			productName = "__NAME__Extension";
+			productName = __NAME__Extension;
 			productReference = BDF599B52E284D640093A134 /* __NAME__Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
@@ -433,8 +433,8 @@
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "__NAME__Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "__NAME__Extension";
+				INFOPLIST_FILE = __NAME__Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = __NAME__Extension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -449,7 +449,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.braysoftware.__NAME__.__NAME__Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__.__NAME__Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
@@ -473,8 +473,8 @@
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "__NAME__Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "__NAME__Extension";
+				INFOPLIST_FILE = __NAME__Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = __NAME__Extension;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,7 +489,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.braysoftware.__NAME__.__NAME__Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__.__NAME__Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
@@ -630,7 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "__NAME__/__NAME__.entitlements";
+				CODE_SIGN_ENTITLEMENTS = __NAME__/__NAME__.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UP6SS5ES7E;
@@ -638,8 +638,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "__NAME__/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "__NAME__";
+				INFOPLIST_FILE = __NAME__/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = __NAME__;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -662,7 +662,7 @@
 					"-framework",
 					AVFoundation,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.braysoftware.__NAME__";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -680,7 +680,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "__NAME__/__NAME__.entitlements";
+				CODE_SIGN_ENTITLEMENTS = __NAME__/__NAME__.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UP6SS5ES7E;
@@ -689,8 +689,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "__NAME__/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "__NAME__";
+				INFOPLIST_FILE = __NAME__/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = __NAME__;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -713,7 +713,7 @@
 					"-framework",
 					AVFoundation,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.braysoftware.__NAME__";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
@@ -737,7 +737,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.braysoftware.__NAME__Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -760,7 +760,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.braysoftware.__NAME__Tests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -782,14 +782,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.braysoftware.__NAME__UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = "__NAME__";
+				TEST_TARGET_NAME = __NAME__;
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Debug;
@@ -804,14 +804,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.braysoftware.__NAME__UITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = "__NAME__";
+				TEST_TARGET_NAME = __NAME__;
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
