@@ -2,8 +2,7 @@
 [![][swift6]](https://swift.org)
 [![AUv3][auv3]][au]
 [![License: MIT][mit]][license]
-
-![](__NAME__/Assets.xcassets/AppIcon.appiconset/256px.png)
+![](media/256px.png)
 
 # About AUv3Template2
 
