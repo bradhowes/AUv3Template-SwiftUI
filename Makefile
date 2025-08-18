@@ -5,7 +5,7 @@ SCHEME = __NAME__
 # BUILD_FLAGS = -skipMacroValidation -skipPackagePluginValidation -enableCodeCoverage YES -scheme $(SCHEME)
 BUILD_FLAGS = -skipMacroValidation -skipPackagePluginValidation -scheme $(SCHEME)
 
-default: build-iOS build-macOS # report
+default: build-macOS # report
 
 build-iOS:
 	rm -rf "$(PWD)/.DerivedData-iOS"
@@ -21,6 +21,7 @@ build-macOS:
 		$(BUILD_FLAGS) \
 		-derivedDataPath "$(PWD)/.DerivedData-macOS" \
 		-destination platform="$(PLATFORM_MACOS)" \
+	    CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
 		| xcbeautify --renderer github-actions
 
 test-iOS:
