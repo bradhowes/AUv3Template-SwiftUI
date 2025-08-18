@@ -96,8 +96,8 @@ This code currently depends on three Swift packages:
 - [AUv3Controls](https://github.com/bradhowes/AUv3Controls) -- knob and switch controls in SwiftUI
 - [DSPHeaders](https://github.com/bradhowes/AUv3Controls) -- C++ v23 header files for DSP processing
 
-[ci]: https://github.com/bradhowes/AUv3Template2/actions/workflows/CI.yml
-[status]: https://github.com/bradhowes/AUv3Template2/actions/workflows/CI.yml/badge.svg?branch=main
+[ci]: https://github.com/bradhowes/AUv3Template-SwiftUI/actions/workflows/CI.yml
+[status]: https://github.com/bradhowes/AUv3Template-SwiftUI/actions/workflows/CI.yml/badge.svg?branch=main
 [swift6]: https://img.shields.io/badge/Swift-6-orange.svg?style=flat
 [auv3]: https://img.shields.io/badge/AudioUnit-AUv3-orange.svg
 [au]: https://developer.apple.com/documentation/audiounit

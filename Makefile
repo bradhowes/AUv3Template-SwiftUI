@@ -2,9 +2,26 @@ PLATFORM_IOS = iOS Simulator,name=iPad mini (A17 Pro)
 PLATFORM_MACOS = macOS
 XCCOV = xcrun xccov view --report --only-targets
 SCHEME = __NAME__
-BUILD_FLAGS = -skipMacroValidation -skipPackagePluginValidation -enableCodeCoverage YES -scheme $(SCHEME)
+# BUILD_FLAGS = -skipMacroValidation -skipPackagePluginValidation -enableCodeCoverage YES -scheme $(SCHEME)
+BUILD_FLAGS = -skipMacroValidation -skipPackagePluginValidation -scheme $(SCHEME)
 
-default: report
+default: build-iOS build-macOS # report
+
+build-iOS:
+	rm -rf "$(PWD)/.DerivedData-iOS"
+	set -o pipefail && xcodebuild build \
+		$(BUILD_FLAGS) \
+		-derivedDataPath "$(PWD)/.DerivedData-iOS" \
+		-destination platform="$(PLATFORM_IOS)" \
+		| xcbeautify --renderer github-actions
+
+build-macOS:
+	rm -rf "$(PWD)/.DerivedData-macOS"
+	set -o pipefail && xcodebuild build \
+		$(BUILD_FLAGS) \
+		-derivedDataPath "$(PWD)/.DerivedData-macOS" \
+		-destination platform="$(PLATFORM_MACOS)" \
+		| xcbeautify --renderer github-actions
 
 test-iOS:
 	rm -rf "$(PWD)/.DerivedData-iOS"
@@ -32,7 +49,6 @@ test-macOS:
 		-destination platform="$(PLATFORM_MACOS)" \
 	    CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
 		| xcbeautify --renderer github-actions
-
 
 coverage-macOS: test-macOS
 	$(XCCOV) "$(PWD)/.DerivedData-macOS/Logs/Test/Test-macOS App-"*.xcresult > coverage_macOS.txt
