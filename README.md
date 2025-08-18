@@ -8,7 +8,7 @@
 # About AUv3Template2
 
 This is full-featured AUv3 effect template for both iOS and macOS platforms. When configured, it will build an app for
-each macOS and iOS platforms and embed in the app bundle an app extension containing the AUv3 component. The apps are
+macOS and iOS platforms and embed in the app bundle an app extension containing the AUv3 component. The apps are
 designed to load the AUv3 component the same way as a host such as GarageBand would. It uses the extension to
 demonstrate how it works by playing a sample audio file and routing it through the effect and out to the device's
 speaker. The host app also supports user and factory presets. User presets can be created, updated, renamed and deleted.
@@ -19,6 +19,8 @@ Additional features and info:
 * Uses a C++ kernel to generate audio samples in the render thread
 * Relies on Swift-C++ interoperability for access to the kernel from Swift code
 * Uses SwiftUI for all user interfaces
+
+Also see my older version [AUv3Template](https://github.com/bradhowes/AUv3Template) that uses UIKit and AppKit for UI rendering.
 
 ## Host Controls
 
