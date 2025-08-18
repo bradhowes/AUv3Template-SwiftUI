@@ -92,7 +92,7 @@ be clear.
 
 # Dependencies
 
-This code currently depends on three Swift packages:
+This code currently depends on three other Swift packages:
 
 - [auv3-support](https://github.com/bradhowes/auv3-support) -- common AUv3 component and host code.
 - [AUv3Controls](https://github.com/bradhowes/AUv3Controls) -- knob and switch controls in SwiftUI
