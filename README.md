@@ -5,7 +5,7 @@
 
 ![](media/256px.png)
 
-# About AUv3Template2
+# About AUv3Template-SwiftUI
 
 This is full-featured AUv3 effect template for both iOS and macOS platforms. When configured, it will build an app for
 macOS and iOS platforms and embed in the app bundle an app extension containing the AUv3 component. The apps are
