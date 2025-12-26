@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bradhowes/auv3-support",
       "state" : {
-        "revision" : "56bdc2047bd4e163bb802a63df6b1b2431d307c0",
-        "version" : "1.0.8"
+        "revision" : "01f1b701fd26febd136056353d69925fcbc55df7",
+        "version" : "1.1.1"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bradhowes/AUv3Controls",
       "state" : {
-        "revision" : "aedf0715fcf80627c7f00a8de0c9d3a389209b43",
-        "version" : "0.22.5"
+        "revision" : "294d4611b8a09781f8de9cab8f6cd9a4ca9122b3",
+        "version" : "0.23.3"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bradhowes/DSPHeaders",
       "state" : {
-        "revision" : "b5840aaf73075be77bf506db3fcae4fc7e276021",
-        "version" : "1.0.5"
+        "revision" : "6ab85805cc0990817daa63aaa8aeb5541a2a826f",
+        "version" : "1.1.0"
       }
     },
     {

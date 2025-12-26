@@ -872,7 +872,7 @@
 			repositoryURL = "https://github.com/bradhowes/DSPHeaders";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.5;
+				minimumVersion = 1.1.0;
 			};
 		};
 		BD33C9F52E36C750003EE137 /* XCRemoteSwiftPackageReference "auv3-support" */ = {
@@ -880,7 +880,7 @@
 			repositoryURL = "https://github.com/bradhowes/auv3-support";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.8;
+				minimumVersion = 1.1.1;
 			};
 		};
 		BDF59A172E2852720093A134 /* XCRemoteSwiftPackageReference "AUv3Controls" */ = {
@@ -888,7 +888,7 @@
 			repositoryURL = "https://github.com/bradhowes/AUv3Controls";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.22.5;
+				minimumVersion = 0.23.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
