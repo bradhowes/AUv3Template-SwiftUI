@@ -6,10 +6,13 @@ import SwiftUI
 
 @main
 struct __NAME__App: App {
+#if os(macOS)
+  @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+#endif
 
   let config = HostConfig(
     name: Bundle.main.auComponentName,
-    version: "1.2.3",
+    version: Bundle.main.versionTag,
     appStoreId: Bundle.main.appStoreId,
     componentDescription: .init(
       componentType: Bundle.main.auComponentType,
@@ -25,12 +28,14 @@ struct __NAME__App: App {
   )
 
   var body: some Scene {
-    WindowGroup {
-      ContentView(config: config)
-        .padding(.top, 16)
-        .accentColor(config.themeLabelColor)
-        .environment(\.themeControlColor, config.themeControlColor)
-        .environment(\.themeLabelColor, config.themeLabelColor)
-    }
+    HostScene(config: config, store: StoreOf<HostFeature>(initialState: .init(config: config)) { HostFeature() })
   }
 }
+
+#if os(macOS)
+class AppDelegate: NSObject, NSApplicationDelegate {
+  func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+    return true
+  }
+}
+#endif // os(macOS)

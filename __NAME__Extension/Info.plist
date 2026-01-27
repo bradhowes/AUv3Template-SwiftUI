@@ -10,23 +10,23 @@
 			<array>
 				<dict>
 					<key>description</key>
-					<string>__NAME__Extension</string>
+					<string>$(AU_BASE_NAME)</string>
 					<key>factoryFunction</key>
 					<string>$(PRODUCT_MODULE_NAME).AudioUnitViewController</string>
 					<key>manufacturer</key>
-					<string>BRay</string>
+					<string>$(AU_COMPONENT_MANUFACTURER)</string>
 					<key>name</key>
-					<string>B-Ray Software: AUv3DemoExtension</string>
+					<string>$(AU_COMPONENT_NAME)</string>
 					<key>sandboxSafe</key>
 					<true/>
 					<key>subtype</key>
-					<string>dEm0</string>
+					<string>$(AU_COMPONENT_SUBTYPE)</string>
 					<key>tags</key>
 					<array>
 						<string>Effect</string>
 					</array>
 					<key>type</key>
-					<string>aufx</string>
+					<string>$(AU_COMPONENT_TYPE)</string>
 					<key>version</key>
 					<integer>67072</integer>
 				</dict>

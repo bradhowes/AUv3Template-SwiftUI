@@ -12,9 +12,7 @@
 #import "__NAME___ParameterAddress.h"
 
 /**
- The audio processing kernel that generates a "chorus" effect by combining an audio signal with a slightly delayed copy
- of itself. The delay value oscillates at a defined frequency which causes the delayed audio to vary in pitch due to it
- being sped up or slowed down.
+ The audio processing kernel that generates a "gain" effect by scaling the samples of an audio signal.
 
  Most of the plumbing and state management is handle by the `EventProcessor` template base class. However, due to
  current limitations in Swift/C++ interoperability, public base class methods are not visible to Swift, so there are
@@ -22,10 +20,11 @@
 
  An additional base class `IntrusiveReferenceCounted` injects an atomic reference counter that Swift/C++ interop uses to
  manage the lifetime of an instance of this class. When the reference count goes to zero, the instance will be
- automatically freed. We treat the DSPKernel as a reference type in order to allow it to be created outside of the
- audio unit and passed into it during construction.
+ automatically freed. We treat the kernel as a reference type in order to allow it to be created outside of the
+ audio unit and passed into it during construction, and Swift will handle its destruction when the audio unit no longer
+ exists.
  */
-class __NAME___Kernel :
+class SWIFT_SHARED_REFERENCE(__NAME____Kernel_retain, __NAME___Kernel_release) __NAME___Kernel :
 public DSPHeaders::EventProcessor<__NAME___Kernel>,
 public DSPHeaders::IntrusiveReferenceCounted<__NAME___Kernel>
 {
@@ -161,7 +160,7 @@ private:
   DSPHeaders::Parameters::Float gain_{__NAME___ParameterAddress::gain};
 
   std::string name_;
-} SWIFT_SHARED_REFERENCE(___NAME___Kernel_retain, ___NAME___Kernel_release);
+};
 
 void ___NAME___Kernel_retain(__NAME___Kernel* _Nonnull obj) noexcept;
 void ___NAME___Kernel_release(__NAME___Kernel* _Nonnull obj) noexcept;

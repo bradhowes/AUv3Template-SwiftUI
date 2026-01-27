@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2E611B2F29333A00B0A560 /* AUv3Controls in Frameworks */ = {isa = PBXBuildFile; productRef = BD2E611A2F29333A00B0A560 /* AUv3Controls */; };
 		BD33C9F42E36C739003EE137 /* DSPHeaders in Frameworks */ = {isa = PBXBuildFile; productRef = BD33C9F32E36C739003EE137 /* DSPHeaders */; };
 		BD33C9F72E36C76B003EE137 /* AUv3Component in Frameworks */ = {isa = PBXBuildFile; productRef = BD33C9F62E36C76B003EE137 /* AUv3Component */; };
 		BD33C9FB2E36C76B003EE137 /* AUv3Shared in Frameworks */ = {isa = PBXBuildFile; productRef = BD33C9FA2E36C76B003EE137 /* AUv3Shared */; };
@@ -119,6 +120,7 @@
 				BD33C9F72E36C76B003EE137 /* AUv3Component in Frameworks */,
 				BD33CB162E36D364003EE137 /* AUv3Host in Frameworks */,
 				BD33C9FB2E36C76B003EE137 /* AUv3Shared in Frameworks */,
+				BD2E611B2F29333A00B0A560 /* AUv3Controls in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +210,7 @@
 				BD33C9F62E36C76B003EE137 /* AUv3Component */,
 				BD33C9FA2E36C76B003EE137 /* AUv3Shared */,
 				BD33CB152E36D364003EE137 /* AUv3Host */,
+				BD2E611A2F29333A00B0A560 /* AUv3Controls */,
 			);
 			productName = __NAME__;
 			productReference = BDF599792E284D630093A134 /* __NAME__.app */;
@@ -426,11 +429,22 @@
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(BUILD_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UP6SS5ES7E;
-				ENABLE_APP_SANDBOX = NO;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = __NAME__Extension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = __NAME__Extension;
@@ -447,7 +461,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(DISPLAY_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__.__NAME__Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -456,7 +470,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "__NAME__Extension/__NAME__Extension-Bridging-Header.hpp";
-				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
@@ -467,11 +480,22 @@
 			buildSettings = {
 				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(BUILD_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UP6SS5ES7E;
-				ENABLE_APP_SANDBOX = NO;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = NO;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = __NAME__Extension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = __NAME__Extension;
@@ -488,7 +512,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(DISPLAY_VERSION)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.__NAME__.__NAME__Extension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -497,7 +521,6 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "__NAME__Extension/__NAME__Extension-Bridging-Header.hpp";
-				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
@@ -638,13 +661,23 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = __NAME__/__NAME__.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(BUILD_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UP6SS5ES7E;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = __NAME__/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = __NAME__;
@@ -663,7 +696,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(DISPLAY_VERSION)";
 				OTHER_LDFLAGS = (
 					"-framework",
 					AudioToolbox,
@@ -677,7 +710,6 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
@@ -690,14 +722,24 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = __NAME__/__NAME__.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(BUILD_VERSION)";
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = UP6SS5ES7E;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_CODE_COVERAGE = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
 				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PRINTING = NO;
+				ENABLE_RESOURCE_ACCESS_USB = NO;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = __NAME__/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = __NAME__;
@@ -716,7 +758,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(DISPLAY_VERSION)";
 				OTHER_LDFLAGS = (
 					"-framework",
 					AudioToolbox,
@@ -730,7 +772,6 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
@@ -886,7 +927,7 @@
 			repositoryURL = "https://github.com/bradhowes/DSPHeaders";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 		BD33C9F52E36C750003EE137 /* XCRemoteSwiftPackageReference "auv3-support" */ = {
@@ -894,7 +935,7 @@
 			repositoryURL = "https://github.com/bradhowes/auv3-support";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
+				minimumVersion = 2.0.0;
 			};
 		};
 		BDF59A172E2852720093A134 /* XCRemoteSwiftPackageReference "AUv3Controls" */ = {
@@ -908,6 +949,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BD2E611A2F29333A00B0A560 /* AUv3Controls */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BDF59A172E2852720093A134 /* XCRemoteSwiftPackageReference "AUv3Controls" */;
+			productName = AUv3Controls;
+		};
 		BD33C9F32E36C739003EE137 /* DSPHeaders */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BD33C9F22E36C739003EE137 /* XCRemoteSwiftPackageReference "DSPHeaders" */;
