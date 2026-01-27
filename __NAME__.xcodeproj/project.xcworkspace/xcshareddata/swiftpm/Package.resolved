@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/bradhowes/auv3-support",
       "state" : {
-        "revision" : "2030e9cad339b34b57a11323d5c5724f04c4d890",
-        "version" : "2.1.4"
+        "revision" : "19d3a28e752523e3e8c186131c8e92b4c2920362",
+        "version" : "2.1.5"
       }
     },
     {
