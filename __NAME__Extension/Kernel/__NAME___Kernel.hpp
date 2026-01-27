@@ -24,7 +24,7 @@
  audio unit and passed into it during construction, and Swift will handle its destruction when the audio unit no longer
  exists.
  */
-class SWIFT_SHARED_REFERENCE(__NAME____Kernel_retain, __NAME___Kernel_release) __NAME___Kernel :
+class SWIFT_SHARED_REFERENCE(___NAME___Kernel_retain, ___NAME___Kernel_release) __NAME___Kernel :
 public DSPHeaders::EventProcessor<__NAME___Kernel>,
 public DSPHeaders::IntrusiveReferenceCounted<__NAME___Kernel>
 {
