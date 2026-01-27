@@ -17,7 +17,7 @@ struct ViewControllerFactory: HostingControllerFactory {
    - parameter audioUnit: the audio unit to install
    - returns: the view controller that is hosting the SwiftUI view of the audio unit
    */
-  static func make(audioUnit: FilterAudioUnit) -> AUv3HostingController<AUMainView> {
+  static func make(audioUnit: AudioUnitAdapter) -> AUv3HostingController<AUMainView> {
     guard let parameterTree = audioUnit.parameterTree,
           let gain = parameterTree.parameter(withAddress: __NAME___ParameterAddress.gain.rawValue)
     else {
@@ -43,7 +43,7 @@ class AudioUnitViewController: AudioUnitViewControllerBase<ViewControllerFactory
   nonisolated public func createAudioUnit(with componentDescription: AudioComponentDescription) throws -> AUAudioUnit {
     let bundle = InternalConstants.bundle
     return installAudioUnit(
-      try FilterAudioUnitFactory.create(
+      try AudioUnitAdapterFactory.create(
         componentDescription: componentDescription,
         parameters: Parameters(),
         kernel: __NAME___Kernel.make(std.string(bundle.auBaseName)),

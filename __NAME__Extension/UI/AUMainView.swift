@@ -6,9 +6,11 @@ struct AUMainView: View {
   let gainStore: StoreOf<KnobFeature>
   let topKnobWidth: CGFloat = 160
 
+  @Environment(\.colorScheme) private var colorScheme
+
   init(gain: AUParameter) {
     self.gainStore = Store(initialState: KnobFeature.State(parameter: gain)) {
-      KnobFeature(parameter: gain)
+      KnobFeature()
     }
   }
 
@@ -19,7 +21,8 @@ struct AUMainView: View {
           .frame(maxWidth: topKnobWidth)
           .preferredColorScheme(.dark)
       }
-      .knobNativeValueEditorHost()
+      .knobValueEditor()
+      .auv3ControlsTheme(Theme(colorScheme: colorScheme))
     }
     .environment(\.colorScheme, .dark)
   }
